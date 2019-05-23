@@ -177,7 +177,7 @@ function FetchLoader() {
       }).bind(this)
     ).catch( function(e) {
         this.onError(e.statusText)
-    })
+    }.bind(this))
 
   }
 
